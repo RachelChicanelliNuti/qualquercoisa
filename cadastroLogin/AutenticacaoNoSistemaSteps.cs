@@ -10,11 +10,11 @@ namespace cadastroLogin
     {
         private IWebDriver driver = new ChromeDriver();
 
-        //[Given(@"que estou na página de autenticacao")]
-        //public void GivenQueEstouNaPaginaDeAutenticacao()
-        //{
-        //    driver.Navigate().GoToUrl("http://192.168.207.157/");
-        //}
+        [Given(@"que estou na página de autenticacao")]
+        public void GivenQueEstouNaPaginaDeAutenticacao()
+        {
+            driver.Navigate().GoToUrl("http://192.168.207.157/");
+        }
         
         [When(@"eu preencho o campo CPF com o valor (.*)")]
         public void WhenEuPreenchoOCampoCPFComOValor(string cpf)
